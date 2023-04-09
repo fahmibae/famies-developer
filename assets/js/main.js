@@ -10,6 +10,16 @@ $(document).ready(function ($) {
       window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
     });
   }
+  
+  function jscopy1() {
+    var jsCopy = document.getElementById("myInput");
+    var msg = "<p> Berhasil di salin";
+      jsCopy.select();
+      jsCopy.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById("PesanCopy").innerHTML = msg + '</p>';
+   }
+
 
   /**
    * Navbar links active state on scroll
