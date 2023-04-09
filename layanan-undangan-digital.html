@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Famiesdeveloper</title>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#navbar_top">
+    <!--Navbar menu-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top bg-only front ">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <a class="navbar-brand col-lg-3 me-0" href="#"><img src="assets/img/logo_famies_white.svg" width="160"
+                    alt=""></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <i class="fa-solid fa-stream text-white"></i>
+            </button>
+            <div class="offcanvas offcanvas-end bg-blue-secondary" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close btn-close-white text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item py-1">
+                            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown custom-dropdown py-1">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="icon-file-text-o mr-2"></span>Layanan
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="layanan-web.html" class="dropdown-item"><i
+                                        class="bi bi-window font-blue fw-semibold"></i><span class="mx-2"></span>Web
+                                    Aplikasi<span class="mx-5"></span></a>
+                                <a href="layanan-desain-grafis.html" class="dropdown-item"><i
+                                        class="bi bi-easel2 font-blue fw-semibold"></i><span class="mx-2"></span>Desain
+                                    Grafis<span class="mx-5"></span></a>
+                                <a href="layanan-skripsi.html" class="dropdown-item"><i
+                                        class="bi bi-book font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Skripsi<span class="mx-5"></span></a>
+                                <a href="layanan-undangan-digital.html" class="dropdown-item"><i
+                                        class="bi bi-envelope-paper-heart font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Undangan Digital<span class="mx-5"></span></a>
+                                <a href="layanan-hosting.html" class="dropdown-item"><i
+                                        class="bi bi-hdd-network font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Hosting Unlimited<span class="mx-5"></span></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="portfolio.html">Portofolio</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="step-service.html">Alur layanan</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="contact.html">Tentang kami</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="login.html" class="btn btn-light-gradient color-1 text-white login mx-2">Masuk</a>
+                        </li>
+                        <div class="copy text-center">
+                            <p class="color-blue">Desain dibuat oleh famies developer &trade;</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="breadcrump" class="bg-statis py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-start ">
+                        <li class="breadcrumb-item text-white">
+                            <h5 class="text-up-down fw-semibold fs-3 align-items-center font-family">Undangan Digital
+                            </h5>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-md-6 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-end fs-6 fw-medium font-family">
+                        <li class="breadcrumb-item"><a class="text-decoration-none text-white "
+                                href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Layanan</li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Undangan Digital</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features py-2 mt-4">
+        <div class="container-content" data-aos="fade-up">
+            <div class="tab-pane mt-5" id="tab-4">
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h2 class="fw-medium fs-1 font-family">
+                            <b class="fw-medium font-blue">Layanan undangan digital</b> kami</h2>
+                        <p class="text-black mt-4">
+                            Layanan undangan digital kami adalah salah satu layanan yang menediakan pembuatan
+                            undangan digital secara online
+                            dengan diakses oleh internet melalui <i>browser.</i> sehingga mempermudah yang menikah
+                            untuk membagikan undangannya kepada para undangannya melalui perangkat.
+                        </p>
+                        <p class="text-black fst-italic mt-4">
+                            Anda
+                            akan mendapat beberapa keuntungan menggunakan undangan
+                            digital
+                            kami. Mau tau apa aja sih keuntungannya :
+                        </p>
+                        <ul class="text-black">
+                            <li><i class="bi bi-check-circle-fill"></i> Menghemat Waktu anda.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Terdapat Berbagai Fitur Tambahan
+                                Menarik.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Menghemat biaya.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Ramah Lingkungan.</li>
+
+                        </ul>
+                        <p class="text-black">
+                            Kami memiliki layanan eksklusif untuk anda. penawaran undangan digital mempermudah anda
+                            dalam menghemat waktu, ramah lingkungan, fitur yang menarik, dan hemat biaya.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-delay="200">
+                        <img src="assets/img/wedding-1.svg" alt="" class="w-85">
+                    </div>
+
+                    <div class="mt-5">
+                        <div class="container" id="icon-grid">
+                            <div class="row justify-content-center">
+                                <div class="rule-text1" data-aos="fade-down" data-aos-duration="1500">
+                                    <h2 class="fs-3 fw-medium font-family"><b class="font-blue fw-medium">Layanan
+                                            undangan digital</b> yang
+                                        tersedia
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-6 py-5 " data-aos="fade-up">
+                                    <div class="card rounded-4 border border-1 shadow">
+                                        <div class="card-header">
+                                            <h4 class=" fw-normal">Paket Sederhana </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h2 class="card-title pricing-card-title fw-bold font-family text-muted">
+                                                Rp. 100.000,-</h2>
+                                            <ul class="list-unstyled mt-4 mb-1">
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Responsive Website</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Detail
+                                                    & Jadwal Pernikahan</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Waktu
+                                                    Penghitung Mundur</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Peta
+                                                    Digital (Google Maps)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Doa &
+                                                    Harapan (Buku Tamu)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Masa
+                                                    Aktif Undangan Online Mulai dari Tanggal Pemesanan s/d H+90
+                                                    Acara (3 bulan Setelah Acara)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Spesial Tautan Undangan (Tulis Nama Tamu Tanpa Batas)</li>
+                                                <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Musik
+                                                    Pengiring</li>
+                                                <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Cek
+                                                    dengan QR Code</li>
+                                                <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Cerita
+                                                    Cinta</li>
+                                                <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Galeri
+                                                    Video</li>
+                                                <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Profil
+                                                    Pengiring</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Hadiah Pernikahan (Kirim Hadiah & Kirim Dana/Amplop Digital)
+                                                </li>
+                                            </ul>
+                                            <a
+                                                class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                                <i></i></a>
+                                            <a type="button" href="checkout.html"
+                                                class="w-100 btn btn-lg btn-outline-primary rounded-4">Pesan
+                                                Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 py-5" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="card rounded-4 border-primary shadow">
+                                        <div class="card-header text-bg-primary border-primary">
+                                            <h4 class="fw-normal">Paket Mewah</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h2 class="card-title pricing-card-title fw-bold font-family text-primary">
+                                                Rp. 230.000,-</h2>
+                                            <ul class="list-unstyled mt-4 mb-1">
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Responsive Website</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Detail
+                                                    & Jadwal Pernikahan</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Waktu
+                                                    Penghitung Mundur</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Peta
+                                                    Digital (Google Maps)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Doa &
+                                                    Harapan (Buku Tamu)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Masa
+                                                    Aktif Undangan Online Mulai dari Tanggal Pemesanan s/d H+90
+                                                    Acara (3 bulan Setelah Acara)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Spesial Tautan Undangan (Tulis Nama Tamu Tanpa Batas)</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Musik
+                                                    Pengiring</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Cek
+                                                    dengan QR Code</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Cerita
+                                                    Cinta</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Galeri
+                                                    Video</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Profil
+                                                    Pengiring</li>
+                                                <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                    Hadiah Pernikahan (Kirim Hadiah & Kirim Dana/Amplop Digital)
+                                                </li>
+                                            </ul>
+                                            <a
+                                                class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                                <i></i></a>
+                                            <a type="button" href="checkout.html"
+                                                class="w-100 btn btn-lg btn-outline-primary rounded-4">Pesan
+                                                Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-center mt-5">
+                                <div class="rule-text1" data-aos="fade-down">
+                                    <h2 class="fs-3 fw-medium font-family"><b
+                                            class="font-blue fw-medium">Perbandingan</b> layanan yang
+                                        tersedia
+                                    </h2>
+                                </div>
+
+                            </div>
+                            <div class="table-responsive mt-5" data-aos="fade-down">
+                                <table class="table text-center">
+                                    <thead class="border-none">
+                                        <tr class="bg-blue">
+                                            <th style="width: 34%;"></th>
+                                            <th style="width: 22%;" class="font-blue fs-5">Paket Sederhana</th>
+                                            <th style="width: 22%;" class="font-blue fs-5">Paket Mewah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-none">
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Responsive Website</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Detail
+                                                & Jadwal Pernikahan</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Waktu
+                                                Penghitung Mundur</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Peta
+                                                Digital (Google Maps)</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Doa &
+                                                Harapan (Buku Tamu)</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Masa
+                                                Aktif Undangan Online Mulai dari Tanggal Pemesanan s/d H+90
+                                                Acara (3 bulan Setelah Acara)</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Spesial Tautan Undangan
+                                                (Tulis Nama
+                                                Tamu Tanpa Batas)</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Musik
+                                                Pengiring</th>
+                                            <td><i class="bi bi-x-circle-fill fs-3 text-danger"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Cek
+                                                dengan QR Code</th>
+                                            <td><i class="bi bi-x-circle-fill fs-3 text-danger"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Cerita
+                                                Cinta</th>
+                                            <td><i class="bi bi-x-circle-fill fs-3 text-danger"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Galeri
+                                                Video</th>
+                                            <td><i class="bi bi-x-circle-fill fs-3 text-danger"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr class="bg-blue">
+                                            <th scope="row" class="text-start font-blue">Profil
+                                                Pengiring</th>
+                                            <td><i class="bi bi-x-circle-fill fs-3 text-danger"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-start font-blue">Hadiah Pernikahan (Kirim
+                                                Hadiah &
+                                                Kirim Dana/Amplop Digital)</th>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                            <td><i class="bi bi-check-circle-fill fs-3 text-success"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Tab Content 4 -->
+        </div>
+    </section><!-- End Features Section -->
+
+    <section id="section-software" class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="rule-text1" data-aos="zoom-in" data-aos-duration="1500">
+                    <h2 class="fw-medium fs-3 font-family"><b class="font-blue fw-medium">Pelanggan</b>
+                        yang pernah bergabung.</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid py-3">
+            <div class="row no-padding">
+                <div id="sliderCarousel" class="carousel slide" data-mdb-ride="carousel" data-aos="zoom-in"
+                    data-aos-duration="1500">
+                    <div class="row no-padding">
+                        <div class="d-lg-flex justify-content-center owl-carousel active-gallery">
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/makaring.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/idpediatech.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/bkd-indramayu.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/lp3i.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footers">
+        <div class="container">
+            <div class="row px-1">
+                <!-- <div class="col-md-4 py-4 py-md-5 d-flex align-items-center">
+                    <div class="w-100">
+                        <span class="subheading ">berlangganan</span>
+                        <h3 class="heading-section">buletin</h3>
+                    </div>
+                </div>
+                <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5">
+                    <form action="#" class="subscribe-form w-100 rounded-1">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control rounded-left rounded-5 border-0"
+                                placeholder="Masukkan alamat email">
+                            <button type="submit" class="form-control submit">
+                                <span><i class="fa-regular fa-paper-plane fw-bold fs-5"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="row ">
+                    <div class="col-md-3 col-lg-6 order-md-last">
+                        <div class="row justify-content-end">
+                            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                                <h2 class="footer-heading">
+                                    <a href="" class="logo text-decoration-none"><img
+                                            src="assets/img/logo_famies_white.svg" width="200" alt=""></a>
+                                </h2>
+                                <p class="copyright">
+                                    Copyright &copy; <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Template ini telah dibuat <i class="ion-ios-heart"
+                                        aria-hidden="true"></i> oleh <a class="text-decoration-none blue"
+                                        href="https://colorlib.com" target="_blank">famiesdeveloper.com</a> | Versi 2.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Layanan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-web.html">Web aplikasi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-desain-grafis.html">Desain grafis</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-skripsi.html">Skripsi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-undangan-digital.html">Undangan digital</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-hosting.html">Hosting Unlimited</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Bantuan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Acara</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Berita</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Telusuri</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="contact.html">Tentang kami</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Tim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 pb-4">
+                    <div class="line"></div>
+                </div>
+                <div class="col-md-6 text-md-left">
+                    <ul class="list-unstyled link-menu nav-left">
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Kebijakan
+                                pribadi</a></li>
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Syarat &amp;
+                                Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <ul class="list-unstyled social nav-right">
+                        <li><a href="#"><span class="icon-twitter"><i class="fa-brands fa-twitter"></i></span></a></li>
+                        <li><a href="#"><span class="icon-instagram"><i class="fa-brands fa-instagram"></i></span></a>
+                        </li>
+                        <li><a href="#"><span class="icon-facebook"></span><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#"><span class="icon-pinterest"></span><i class="fa-brands fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="scroll-to-top" href="#page-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <a class="scroll-to-top1 bounce"
+        href="https://api.whatsapp.com/send?phone=6281321860243&text=Halo%20Famiesdeveloper,%20Saya%20mau%20jasa%20artikel%20bisa?">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+    <script>
+        function jscopy1() {
+            var jsCopy = document.getElementById("myInput");
+            var msg = "<p> Berhasil di salin";
+            jsCopy.select();
+            jsCopy.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            document.getElementById("PesanCopy").innerHTML = jsCopy.value + msg + '</p>';
+        }
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("showValue");
+
+            var replaceText = $(this).parent().hasClass("showValue") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("show");
+
+            var replaceText = $(this).parent().hasClass("show") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar_top'
+        })
+    </script>
+    <Script>
+        jQuery("#carousel").owlCarousel({
+            autoplay: true,
+            rewind: true,
+            margin: 20,
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 3
+                },
+
+                1024: {
+                    items: 4
+                },
+
+                1366: {
+                    items: 4
+                }
+            }
+        });
+    </Script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay')
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+    <script>
+        /**
+         * Validation form bootstrap 5.3
+         */
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        /**
+         * AOS System animation
+         */
+        AOS.init({
+            duration: 1200,
+        })
+
+        /**
+         * Pure Counter
+         */
+        new PureCounter();
+    </script>
+
+    <script nonce="cff10c5d-5380-4dd1-874d-c0b789f0e39b">
+        (function (w, d) {
+            ! function (f, g, h, i) {
+                f[h] = f[h] || {};
+                f[h].executed = [];
+                f.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                f.zaraz.q = [];
+                f.zaraz._f = function (j) {
+                    return function () {
+                        var k = Array.prototype.slice.call(arguments);
+                        f.zaraz.q.push({
+                            m: j,
+                            a: k
+                        })
+                    }
+                };
+                for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l);
+                f.zaraz.init = () => {
+                    var m = g.getElementsByTagName(i)[0],
+                        n = g.createElement(i),
+                        o = g.getElementsByTagName("title")[0];
+                    o && (f[h].t = g.getElementsByTagName("title")[0].text);
+                    f[h].x = Math.random();
+                    f[h].w = f.screen.width;
+                    f[h].h = f.screen.height;
+                    f[h].j = f.innerHeight;
+                    f[h].e = f.innerWidth;
+                    f[h].l = f.location.href;
+                    f[h].r = g.referrer;
+                    f[h].k = f.screen.colorDepth;
+                    f[h].n = g.characterSet;
+                    f[h].o = (new Date).getTimezoneOffset();
+                    if (f.dataLayer)
+                        for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({
+                                ...t[1],
+                                ...u[1]
+                            }))))) zaraz.set(s[0], s[1], {
+                            scope: "page"
+                        });
+                    f[h].q = [];
+                    for (; f.zaraz.q.length;) {
+                        const v = f.zaraz.q.shift();
+                        f[h].q.push(v)
+                    }
+                    n.defer = !0;
+                    for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y
+                        .startsWith("_zaraz_"))).forEach((x => {
+                        try {
+                            f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x))
+                        } catch {
+                            f[h]["z_" + x.slice(7)] = w.getItem(x)
+                        }
+                    }));
+                    n.referrerPolicy = "origin";
+                    n.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h])));
+                    m.parentNode.insertBefore(n, m)
+                };
+                ["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener(
+                    "DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+
+</body>
+
+</html>

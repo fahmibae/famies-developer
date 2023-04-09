@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Famiesdeveloper</title>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#navbar_top">
+    <!--Navbar menu-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top bg-only front ">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <a class="navbar-brand col-lg-3 me-0" href="#"><img src="assets/img/logo_famies_white.svg" width="160"
+                    alt=""></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <i class="fa-solid fa-stream text-white"></i>
+            </button>
+            <div class="offcanvas offcanvas-end bg-blue-secondary" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close btn-close-white text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item py-1">
+                            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown custom-dropdown py-1">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="icon-file-text-o mr-2"></span>Layanan
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="layanan-web.html" class="dropdown-item"><i
+                                        class="bi bi-window font-blue fw-semibold"></i><span class="mx-2"></span>Web
+                                    Aplikasi<span class="mx-5"></span></a>
+                                <a href="layanan-desain-grafis.html" class="dropdown-item"><i
+                                        class="bi bi-easel2 font-blue fw-semibold"></i><span class="mx-2"></span>Desain
+                                    Grafis<span class="mx-5"></span></a>
+                                <a href="layanan-skripsi.html" class="dropdown-item"><i
+                                        class="bi bi-book font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Skripsi<span class="mx-5"></span></a>
+                                <a href="layanan-undangan-digital.html" class="dropdown-item"><i
+                                        class="bi bi-envelope-paper-heart font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Undangan Digital<span class="mx-5"></span></a>
+                                <a href="layanan-hosting.html" class="dropdown-item"><i
+                                        class="bi bi-hdd-network font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Hosting Unlimited<span class="mx-5"></span></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="portfolio.html">Portofolio</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="step-service.html">Alur layanan</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a class="nav-link" href="contact.html">Tentang kami</a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="login.html" class="btn btn-light-gradient color-1 text-white login mx-2">Masuk</a>
+                        </li>
+                        <div class="copy text-center">
+                            <p class="color-blue">Desain dibuat oleh famies developer &trade;</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="breadcrump" class="bg-statis py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-start ">
+                        <li class="breadcrumb-item text-white">
+                            <h5 class="text-up-down fw-semibold fs-3 align-items-center font-family">Desain Grafis</h5>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-md-6 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-end fs-6 fw-medium font-family">
+                        <li class="breadcrumb-item"><a class="text-decoration-none text-white "
+                                href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Layanan</li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Desain Grafis</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features py-2 mt-4">
+        <div class="container-content" data-aos="fade-up">
+
+            <div class="tab-pane mt-5" id="tab-2">
+                <div class="row mt-5">
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h2 class="fw-medium fs-1 font-family">
+                            <b class="font-blue fw-medium">Layanan desain grafis</b> kami</h2>
+                        </h3>
+                        <p class="text-black mt-4">
+                            Layanan desain grafis kami adalah sejenis layanan yang menyediakan sebuah seni dengan
+                            memanfaatkan tulisan, ruang dan
+                            gambar untuk mengomunisasikan sebuah pesan. Desain grafis bisa dalam bentuk fisik atau
+                            digital. sehingga anda dapat melakukan sebuah pemasaran produk atau ide-ide lainnya
+                            melalui layanan ini.
+                        </p>
+                        <p class="text-black fst-italic mt-4">
+                            Anda
+                            akan mendapat beberapa keuntungan menggunakan layanan desain grafis
+                            kami. Mau tau apa aja sih keuntungannya :
+                        </p>
+                        <ul class="mt-4 text-black">
+                            <li><i class="bi bi-check-circle-fill"></i> Mencerminkan Citra Perusahaan.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Menciptakan Branding di Dunia
+                                Bisnis.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Desain Grafis Andalan Strategi
+                                Marketing.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Mempercepat Proses Pekerjaan.</li>
+
+                        </ul>
+
+                        <p class="text-black">
+                            Kami memiliki beberapa contoh desain grafis yang cocok digunakan pada berbagai objek.
+                            seperti: spanduk, kartu nama, flayer, logo desain, stiker, dan lain sebagainya. berikut
+                            adalah pilihan yang tepat untuk anda.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-delay="200">
+                        <img src="assets/img/art-1.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="mt-5 py-3">
+                        <div class="container-fluid" id="icon-grid">
+                            <div class="row justify-content-center">
+                                <div class="rule-text1" data-aos="fade-down">
+                                    <h2 class="fs-3 fw-medium font-family"><b class="font-blue fw-medium">Layanan
+                                            desain grafis</b> yang
+                                        tersedia
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-palette fw-semibold fs-1"></i> </div>
+                                                    <h5 class="fw-bold mb-2">Desain Logo</h5>
+                                                    <p class="text-card fw-regular">menciptakan dan menyampaikan
+                                                        citra positif perusahaan. Untuk memberi kesan baik dan
+                                                        kepercayaan kepada masyarakat untuk mau menggunakan produk.
+                                                        Untuk promosi produk, perusahaan, atau organisasi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-image fw-semibold fs-1"></i>
+                                                    </div>
+                                                    <h5 class="fw-bold mb-2">Spanduk</h5>
+                                                    <p class="text-card fw-regular">media promosi. Banner dianggap
+                                                        efektif digunakan sebagai media promosi. Namun, pemasangan
+                                                        banner harus berada pada tempat yang strategis dan sering
+                                                        dilihat masyarakat umum. Banner juga bisa berfungsi sebagai
+                                                        identitas atau ciri khas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body ">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-postage-heart fw-semibold fs-1"></i>
+                                                    </div>
+                                                    <h5 class="fw-bold mb-2">stiker</h5>
+                                                    <p class="text-card fw-regular">penempelan pada sebuah kemasan.
+                                                        Stiker juga bisa digunakan sebagai hadiah disebuah acara
+                                                        atau pameran. Kamu bisa berikan stiker logo perusahaan
+                                                        dengan desain yang unik kepada calon pelanggan saat hadiri
+                                                        pameran.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-clipboard fw-semibold fs-1"></i> </div>
+                                                    <h5 class="fw-bold mb-2">flayer</h5>
+                                                    <p class="text-card fw-regular">Memperkenalkan produk atau
+                                                        layanan kepada pelanggan dan masyarakat secara luas. Bisa
+                                                        dimanfaatkan untuk menawarkan suatu produk atau jasa kepada
+                                                        pelanggan dan masyarakat luas. Sebagai media promosi yang
+                                                        praktis. Mudah diedarkan secara luas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-card-checklist fw-semibold fs-1"></i>
+                                                    </div>
+                                                    <h5 class="fw-bold mb-2">kartu nama</h5>
+                                                    <p class="text-card fw-regular">memberikan informasi kontak kita
+                                                        pada saat pertama bertemu dengan seseorang. Namun, tidak
+                                                        hanya itu saja fungsinya. Kartu nama juga diketahui sebagai
+                                                        alat marketing yang bisa membantu memberikan tidak hanya
+                                                        tentang bagaimana cara menghubungimu tetapi juga tentang
+                                                        bisnismu.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                                    <a class="card-link" href="">
+                                        <div class="card rounded-4 shadow">
+                                            <div class="card-body">
+                                                <div class="col d-flex flex-column gap-2">
+                                                    <div class="d-inline-flex align-items-center rounded-5">
+                                                        <i class="bi bi-align-bottom fw-semibold fs-1"></i> </div>
+                                                    <h5 class="fw-bold mb-2">stampel</h5>
+                                                    <p class="text-card fw-regular">sebagai tanpa pengenal dari
+                                                        orang yang namanya tertera atau tanda tangannya tercantum
+                                                        dalam dokumen. Sebenarnya, dengan nama dan tanda tangan pun,
+                                                        kehadiran dan persetujuan seseorang bisa diketahui. Namun
+                                                        dengan stempel, keyakinan atas persetujuan semakin kuat.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Tab Content 2 -->
+
+        </div>
+    </section><!-- End Features Section -->
+
+    <section id="section-software mb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="rule-text1" data-aos="zoom-in" data-aos-duration="1500">
+                    <h2 class="fw-medium fs-3 font-family"><b class="font-blue fw-medium">Pelanggan</b>
+                        yang pernah bergabung.</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid py-3">
+            <div class="row no-padding">
+                <div id="sliderCarousel" class="carousel slide" data-mdb-ride="carousel" data-aos="zoom-in"
+                    data-aos-duration="1500">
+                    <div class="row no-padding">
+                        <div class="d-lg-flex justify-content-center owl-carousel active-gallery">
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/makaring.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/idpediatech.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/bkd-indramayu.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item single-gallery">
+                                <div class="items-img">
+                                    <img src="assets/img/client/lp3i.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footers">
+        <div class="container">
+            <div class="row px-1">
+                <!-- <div class="col-md-4 py-4 py-md-5 d-flex align-items-center">
+                    <div class="w-100">
+                        <span class="subheading ">berlangganan</span>
+                        <h3 class="heading-section">buletin</h3>
+                    </div>
+                </div>
+                <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5">
+                    <form action="#" class="subscribe-form w-100 rounded-1">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control rounded-left rounded-5 border-0"
+                                placeholder="Masukkan alamat email">
+                            <button type="submit" class="form-control submit">
+                                <span><i class="fa-regular fa-paper-plane fw-bold fs-5"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="row ">
+                    <div class="col-md-3 col-lg-6 order-md-last">
+                        <div class="row justify-content-end">
+                            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                                <h2 class="footer-heading">
+                                    <a href="" class="logo text-decoration-none"><img
+                                            src="assets/img/logo_famies_white.svg" width="200" alt=""></a>
+                                </h2>
+                                <p class="copyright">
+                                    Copyright &copy; <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Template ini telah dibuat <i class="ion-ios-heart"
+                                        aria-hidden="true"></i> oleh <a class="text-decoration-none blue"
+                                        href="https://colorlib.com" target="_blank">famiesdeveloper.com</a> | Versi 2.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Layanan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-web.html">Web aplikasi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-desain-grafis.html">Desain grafis</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-skripsi.html">Skripsi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-undangan-digital.html">Undangan digital</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-hosting.html">Hosting Unlimited</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Bantuan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Acara</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Berita</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Telusuri</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="contact.html">Tentang kami</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Tim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 pb-4">
+                    <div class="line"></div>
+                </div>
+                <div class="col-md-6 text-md-left">
+                    <ul class="list-unstyled link-menu nav-left">
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Kebijakan
+                                pribadi</a></li>
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Syarat &amp;
+                                Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <ul class="list-unstyled social nav-right">
+                        <li><a href="#"><span class="icon-twitter"><i class="fa-brands fa-twitter"></i></span></a></li>
+                        <li><a href="#"><span class="icon-instagram"><i class="fa-brands fa-instagram"></i></span></a>
+                        </li>
+                        <li><a href="#"><span class="icon-facebook"></span><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#"><span class="icon-pinterest"></span><i class="fa-brands fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="scroll-to-top" href="#page-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <a class="scroll-to-top1 bounce"
+        href="https://api.whatsapp.com/send?phone=6281321860243&text=Halo%20Famiesdeveloper,%20Saya%20mau%20jasa%20artikel%20bisa?">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+    <script>
+        function jscopy1() {
+            var jsCopy = document.getElementById("myInput");
+            var msg = "<p> Berhasil di salin";
+            jsCopy.select();
+            jsCopy.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            document.getElementById("PesanCopy").innerHTML = jsCopy.value + msg + '</p>';
+        }
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("showValue");
+
+            var replaceText = $(this).parent().hasClass("showValue") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("show");
+
+            var replaceText = $(this).parent().hasClass("show") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar_top'
+        })
+    </script>
+    <Script>
+        jQuery("#carousel").owlCarousel({
+            autoplay: true,
+            rewind: true,
+            margin: 20,
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 3
+                },
+
+                1024: {
+                    items: 4
+                },
+
+                1366: {
+                    items: 4
+                }
+            }
+        });
+    </Script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay')
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+    <script>
+        /**
+         * Validation form bootstrap 5.3
+         */
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        /**
+         * AOS System animation
+         */
+        AOS.init({
+            duration: 1200,
+        })
+
+        /**
+         * Pure Counter
+         */
+        new PureCounter();
+    </script>
+
+    <script nonce="cff10c5d-5380-4dd1-874d-c0b789f0e39b">
+        (function (w, d) {
+            ! function (f, g, h, i) {
+                f[h] = f[h] || {};
+                f[h].executed = [];
+                f.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                f.zaraz.q = [];
+                f.zaraz._f = function (j) {
+                    return function () {
+                        var k = Array.prototype.slice.call(arguments);
+                        f.zaraz.q.push({
+                            m: j,
+                            a: k
+                        })
+                    }
+                };
+                for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l);
+                f.zaraz.init = () => {
+                    var m = g.getElementsByTagName(i)[0],
+                        n = g.createElement(i),
+                        o = g.getElementsByTagName("title")[0];
+                    o && (f[h].t = g.getElementsByTagName("title")[0].text);
+                    f[h].x = Math.random();
+                    f[h].w = f.screen.width;
+                    f[h].h = f.screen.height;
+                    f[h].j = f.innerHeight;
+                    f[h].e = f.innerWidth;
+                    f[h].l = f.location.href;
+                    f[h].r = g.referrer;
+                    f[h].k = f.screen.colorDepth;
+                    f[h].n = g.characterSet;
+                    f[h].o = (new Date).getTimezoneOffset();
+                    if (f.dataLayer)
+                        for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({
+                                ...t[1],
+                                ...u[1]
+                            }))))) zaraz.set(s[0], s[1], {
+                            scope: "page"
+                        });
+                    f[h].q = [];
+                    for (; f.zaraz.q.length;) {
+                        const v = f.zaraz.q.shift();
+                        f[h].q.push(v)
+                    }
+                    n.defer = !0;
+                    for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y
+                        .startsWith("_zaraz_"))).forEach((x => {
+                        try {
+                            f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x))
+                        } catch {
+                            f[h]["z_" + x.slice(7)] = w.getItem(x)
+                        }
+                    }));
+                    n.referrerPolicy = "origin";
+                    n.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h])));
+                    m.parentNode.insertBefore(n, m)
+                };
+                ["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener(
+                    "DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+
+</body>
+
+</html>
