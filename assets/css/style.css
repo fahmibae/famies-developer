@@ -10,6 +10,10 @@ body {
   background: #fff;
 }
 
+.w-30{
+  width: 30%;
+}
+
 .font-content {
   font-size: 50px;
 }
