@@ -77,6 +77,9 @@
                         <li class="nav-item py-1">
                             <a class="nav-link" href="contact.html">Tentang kami</a>
                         </li>
+                        <li class="nav-item py-1">
+                            <a href="login.html" class="btn btn-light-gradient color-1 text-white login mx-2">Masuk</a>
+                        </li>
                         <div class="copy text-center">
                             <p class="color-blue">Desain dibuat oleh famies developer &trade;</p>
                         </div>
@@ -560,29 +563,6 @@
     </script>
     <script>
         /**
-         * Validation form bootstrap 5.3
-         */
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-
-        /**
          * AOS System animation
          */
         AOS.init({
@@ -596,7 +576,6 @@
     </script>
 
 
-   
 </body>
 
 </html>
