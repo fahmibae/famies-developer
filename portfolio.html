@@ -256,32 +256,25 @@
         </div>
         <div class="container-fluid py-3">
             <div class="row no-padding">
-                <div id="sliderCarousel" class="carousel slide" data-ride="carousel" data-aos="zoom-in"
-                    data-aos-duration="1500">
-                    <div class="row no-padding">
-                        <div class="d-lg-flex justify-content-center owl-carousel active-gallery">
-                            <div class="item single-gallery">
-                                <div class="items-img">
-                                    <img src="assets/img/client/makaring.png" class="w-50" alt="">
-                                </div>
-                            </div>
-                            <div class="item single-gallery">
-                                <div class="items-img">
-                                    <img src="assets/img/client/idpediatech.png" class="w-50" alt="">
-                                </div>
-                            </div>
-                            <div class="item single-gallery">
-                                <div class="items-img">
-                                    <img src="assets/img/client/bkd-indramayu.png" class="w-50" alt="">
-                                </div>
-                            </div>
-                            <div class="item single-gallery">
-                                <div class="items-img">
-                                    <img src="assets/img/client/lp3i.svg" class="w-50" alt="">
-                                </div>
-                            </div>
-                        </div>
+                <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/client/makaring.png" class="w-50" alt="">
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <img src="assets/img/client/idpediatech.png" class="w-50" alt="">
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <img src="assets/img/client/bkd-indramayu.png" class="w-50" alt="">
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <img src="assets/img/client/lp3i.svg" class="w-50" alt="">
+                        </div><!-- End testimonial item -->
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -411,6 +404,7 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
         crossorigin="anonymous"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#search").on("keyup", function () {
@@ -426,52 +420,37 @@
             target: '#navbar_top'
         })
     </script>
-    <Script>
-        jQuery("#carousel").owlCarousel({
-            autoplay: true,
-            rewind: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 7000,
-            smartSpeed: 800,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
+    <script>
+        new Swiper('.slides-1', {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
                 },
 
-                600: {
-                    items: 3
-                },
-
-                1024: {
-                    items: 4
-                },
-
-                1366: {
-                    items: 4
+                1200: {
+                    slidesPerView: 3,
                 }
             }
         });
-    </Script>
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 4,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay')
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
     </script>
+
     <script>
         /**
          * AOS System animation
