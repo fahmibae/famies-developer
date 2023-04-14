@@ -257,7 +257,7 @@
         <div class="container-fluid py-3">
             <div class="row no-padding">
                 <!-- Slider main container -->
-                <center><div class="slides-1 swiper">
+                <center><div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper justify-content-center">
                         <!-- Slides -->
@@ -423,6 +423,29 @@
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#navbar_top'
         })
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'vertical',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
     </script>
     <script>
         new Swiper('.slides-1', {
