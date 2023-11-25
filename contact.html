@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/brand/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/brand//logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/brand//logo/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icon/brand//logo/site.webmanifest">
+
+    <title>famies developer</title>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#navbar_top">
+    <!--Navbar menu-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top bg-only front ">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <a class="navbar-brand col-lg-3 me-0" href="index.html"><img src="assets/img/logo_famies_white.svg"
+                    width="160" alt=""></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <i class="fa-solid fa-stream text-white"></i>
+            </button>
+            <div class="offcanvas offcanvas-end bg-blue-secondary" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close btn-close-white text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item py-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown custom-dropdown py-2">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="icon-file-text-o mr-2"></span>Layanan
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="layanan-web.html" class="dropdown-item"><i
+                                        class="bi bi-window font-blue fw-semibold"></i><span class="mx-2"></span>Web
+                                    Aplikasi<span class="mx-5"></span></a>
+                                <a href="layanan-desain-grafis.html" class="dropdown-item"><i
+                                        class="bi bi-easel2 font-blue fw-semibold"></i><span class="mx-2"></span>Desain
+                                    Grafis<span class="mx-5"></span></a>
+                                <a href="layanan-skripsi.html" class="dropdown-item"><i
+                                        class="bi bi-book font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Skripsi<span class="mx-5"></span></a>
+                                <a href="layanan-undangan-digital.html" class="dropdown-item"><i
+                                        class="bi bi-envelope-paper-heart font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Undangan Digital<span class="mx-5"></span></a>
+                                <a href="layanan-hosting.html" class="dropdown-item"><i
+                                        class="bi bi-hdd-network font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Hosting Tanpa Batas<span class="mx-5"></span></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link" href="portfolio.html">Portofolio</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link active" href="#">Tentang kami</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a href="login.html"
+                                class="btn btn-light-gradient color-1 rounded-3 text-white login mx-2">Masuk</a>
+                        </li>
+                        <div class="copy text-center">
+                            <p class="color-blue">Desain dibuat oleh famies developer &trade;</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="breadcrump" class="bg-only py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-center">
+                        <li class="breadcrumb-item text-white">
+                            <h5 class="text-up-down fw-semibold fs-1 align-items-center font-family">Tentang Kami</h5>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-12" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-center fs-6 fw-medium font-family">
+                        <li class="breadcrumb-item"><a class="text-decoration-none text-white "
+                                href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Tentang Kami</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="container-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 px-5 py-5 aos-animate" data-aos="fade-right" data-aos-duration="500">
+                    <h5 class="fw-light line-height-1 fs-6 font-family font-blue">TENTANG KAMI</h5>
+                    <h3 class="fw-regular fs-25 font-family">Apa itu <b class="fw-bold font-blue">Famies developer</b>
+                    </h3>
+                    <p class="text-justify fs-6">Famies developer
+                        merupakan penyedia layanan dan jasa dalam
+                        pembuatan sebuah
+                        proyek yang bersifat personal maupun bisnis. seperti halnya layanan pembuatan website, desain
+                        grafis, skripsi, undangan digital, dan layanan hosting tanpa batas. kami telah melayani layanan
+                        sebelumnya misalnya pada proyek skripsi, ataupun pembuatan website. namun layanan yang masih
+                        baru di rilis ialah desain grafis, undangan digital, dan layanan hosting.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 px-5 py-3 aos-animate" data-aos="fade-left" data-aos-duration="500">
+                    <img src="assets/img/about-us.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 px-5 py-3 aos-animate" data-aos="fade-right" data-aos-duration="500">
+                    <img src="assets/img/mision.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 px-5 py-5 aos-animate" data-aos="fade-left" data-aos-duration="500">
+                    <h5 class="fw-light line-height-1 fs-6 font-family font-blue">TUJUAN KAMI</h5>
+                    <h2 class="fw-regular fs-25 font-family"> <b class="fw-bold font-blue fs-25 font-family">Visi
+                            &amp; Misi</b> Kami</h2>
+                    <h5 class="fw-semibold mx-3 fs-4 font-blue font-family">Visi</h5>
+                    <p class="text-card fw-regular mx-3 font-family text-justify">Ingin membangun
+                        teknologi industri
+                        yang lebih maju dan pengembangan yang efisien, dengan membantu para pengembang
+                        bisnis dan personal dalam mencapai tujuan mereka dengan baik.</p>
+                    <h5 class="fw-semibold mx-3 fs-4 font-blue font-family">Misi</h5>
+                    <p class="text-card fw-regular mx-3 font-family text-justify">Meningkatkan
+                        kinerja kami dalam
+                        pengerjaan dengan lebih baik lagi, dengan intropeksi terhadap kesalahan atau
+                        keterlambatan pada pekerjaan yang telah dikerjakan, dan memenuhi seluruh
+                        kebutuhan setiap industri ataupun personal dalam mencapai tujuannya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="bg-prefer testimonials py-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="rule-text1" data-aos="fade-down" data-aos-duration="500">
+                    <h5 class="fw-light fs-6 text-white letter_spacing1 font-family">RIWAYAT
+                            PELAYANAN</h5>
+                    <h2 class="fs-1 fw-medium text-white font-family"><b class="text-white fw-medium">Beberapa pelayanan</b>
+                        yang kami tangani.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-duration="500">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3>Januari 2020
+                                            -
+                                            April 2020</h3>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Membuat <i>website</i> Pariwisata Ciayumajakuning untuk
+                                    mengetahui tempat wisata-wisata yang ada di daerah cirebon, indramayu,
+                                    majalengka, kuningan.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+
+                                    <div>
+                                        <h3>Mei 2020 -
+                                            Desember 2020</h3>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Membuat skripsi sistem informasi manajemen katering
+                                    dengan
+                                    metode <i>Data Flow Diagram</i> pada studi kasus Katering Senjani
+                                    Malang.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3>April 2021 -
+                                            Oktober 2021</h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Membuat skripsi sistem kecerdasan buatan untuk
+                                    penempatan
+                                    kerja dengan metode MABAC pada studi kasus LP3I Cirebon.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3>Desember
+                                            2021 -
+                                            Maret 2022</h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    &nbsp;&nbsp;Membuat skripsi sistem informasi pemulasaran jenazah
+                                    dengan
+                                    menggunakan metode <i>Research and Development</i> pada studi kasus
+                                    rumah
+                                    sakit daerah indramayu.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    &nbsp;&nbsp;Membuat skripsi sistem informasi manajemen rumah sakit
+                                    dengan menggunakan metode <i>Research and Development</i> pada studi
+                                    kasus
+                                    rumah sakit daerah indramayu.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3>April 2022
+                                            -
+                                            September 2022</h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Membuat skripsi sistem informasi penggunaan dana
+                                    alokasi
+                                    khusus fisik dengan menggunakan metode <i>Research and Development</i>
+                                    pada
+                                    studi kasus badan keuangan daerah.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3>Januari 2023
+                                            -
+                                            Mei 2023</h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Membuat <i>website</i> toko online untuk penjualan
+                                                cemilan
+                                                pedas dan gurih pada studi kasus makaring krik krik.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+    <section class="py-5 bg-ide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mt-5" data-aos="fade-left" data-aos-duration="500">
+                    <h5 class="fw-light line-height-1 fs-5 font-family font-blue mt-5">KOMITMEN</h5>
+                    <h3 class="fw-regular fs-25 font-family mt-3"><b class="fw-bold font-blue">Memberikan
+                            pelayanan
+                            terbaik</b> untuk anda
+                    </h3>
+                    <p class="text-lead text-justify font-family line-height-1 mt-3">Kami akan memberikan pelayanan yang
+                        terbaik untuk
+                        pelanggan. maka itu
+                        adalah bagian dari komitmen dalam bekerja. kami akan selalu mencoba mendalami
+                        beberapa aspek
+                        dalam memenuhi kebutuhan layanan untuk pelanggan.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-3" data-aos="fade-right" data-aos-duration="500">
+                    <img src="assets/img/komitmen.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-6 col-md-6"  data-aos="fade-left" data-aos-duration="500">
+                    <img src="assets/img/dicipline.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5 py-5" data-aos="fade-right" data-aos-duration="500">
+                    <h5 class="fw-light line-height-1 fs-5 font-family font-blue">BUDAYA</h5>
+                    <h2 class="fw-regular fs-25 font-family"> <b class="fw-bold font-blue font-family">Penerapan
+                            kebiasaan</b> kami
+                    </h2>
+                    <p class="text-lead fw-regular font-family text-justify mt-3">Ingin membangun
+                        Bertanggun jawab, menjaga integritas, dan selalu disiplin dara pelayanan. itu
+                        adalah poin
+                        berharga yang kami miliki. guna dalam meningkatkan kualitas kami untuk
+                        kepentingan anda.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-6 col-md-6 mt-4" data-aos="fade-left" data-aos-duration="500">
+                    <h5 class="fw-light line-height-1 fs-5 font-family font-blue">TEKNOLOGI</h5>
+                    <h2 class="fw-regular fs-25 font-family"> <b class="fw-bold font-blue font-family">Didukung oleh
+                            perangkat </b> yang
+                        baik
+                    </h2>
+                    <p class="text-lead fw-regular font-family text-justify">Kami memiliki perangkat
+                        software yang
+                        mumpuni dalam membuat produk layanan aplikasi, desain grafis, undangan digital,
+                        skripsi dan
+                        lainnya. sehingga akan menghasilkan produk layanan yang baik dan berkualitas.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-4" data-aos="fade-right" data-aos-duration="500">
+                    <img src="assets/img/teknologi.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="bg-prefer-2 testimonials py-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="rule-text1" data-aos="fade-down" data-aos-duration="500">
+                    <h5 class="fw-light fs-6 text-white letter_spacing1 font-family">TESTIMONIAL</h5>
+                    <h2 class="fs-1 fw-medium text-white font-family"><b class="text-white fw-medium">Apa kata
+                            mereka</b>
+                        tentang kami.
+                    </h2>
+                </div>
+                <p class="text-white fs-8 col-lg-9 text-center py-4" data-aos="fade-down" data-aos-duration="500">
+                    Beberapa
+                    tanggapan atau pendapat mereka tentang kami. Dengan berbagai macam pendapat yang berbeda.</p>
+            </div>
+
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-duration="500">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-1.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Abdullah Faqih</h3>
+                                        <h4>Mahasiswa</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih atas penyelesaian skripsinya. saya merasa puas dengan hasil akhirnya.
+                                    dengan melalui berbagai macam rintangan namun hasilnya sangat baik sekali. Terima
+                                    kasih famies developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-2.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Levi Navian Afandi</h3>
+                                        <h4>Mahasiswa</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih famies developer. telah membantu saya dalam menyelesaikan tugas akhir
+                                    saya dengan baik. dan saya mendapatkan hasil akhir yang memuaskan. Sukses terus
+                                    famies developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-3.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Sadinah Nur Beity</h3>
+                                        <h4>Makaring krik krik</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih famies developer. Telah menyelesaikan aplikasi untuk penjualan produk
+                                    kami. Dan hasilnya saya cukup puas dan diselesaikan dengan sangat baik. Jaya terus
+                                    untuk famies developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-4.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Andhika Sadewa</h3>
+                                        <h4>Mahasiswa</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Thank you famies developer. hasil dari tugas akhir kemarin cukup memuaskan. aku
+                                    mendapatkan nilai yang sangat baik dan lulus dengan tepat waktu. berjaya terus untuk
+                                    kedepannya famies developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-5.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Ahmad Rifai</h3>
+                                        <h4>Mahasiswa</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih famies developer. sudah menyelesaikan tugas akhir saya dengan baik dan
+                                    tepat waktu. Saya mendapatkan hasil yang memuaskan. sekali lagi terima kasih famies
+                                    developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-6.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Dicky Fadillah Sandi</h3>
+                                        <h4>IDPediaTech</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih famies developer. telah menyelesaikan website kami. dan hasilnya sangat
+                                    memuaskan. semoga kedepannya bisa lebih jaya lagi famies developer. salam
+                                    IDPediaTech.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/testimonials/image-8.jpg" class="testimonial-img flex-shrink-0"
+                                        alt="">
+                                    <div>
+                                        <h3>Nur Anisyah</h3>
+                                        <h4>Mahasiswa</h4>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Terima kasih famies developer. telah menyelesaikan menyelesaikan tugas akhir saya
+                                    dengan baik dan
+                                    tepat waktu. Saya mendapatkan hasil yang memuaskan. sekali lagi terima kasih famies
+                                    developer.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <section class="panel2 blur" id="section-feedback">
+        <div class="container-fluid">
+            <div class="row align-items-center g-lg-5 py-4">
+                <div class="tab-contact col-lg-4 text-center text-lg-start py-5 bg-join" data-aos="fade-down"
+                    data-aos-duration="500">
+                    <div class="p-5 p-md-6">
+                        <h4 class="text-white text-shadow font-family fs-1 fw-bold lh-1 mb-3 text-start">Berikan
+                            tanggapan anda
+                            tentang kami</h4>
+                        <p class="fs-6 text-start fw-light text-white">Silahkan kirim tanggapan anda tentang produk
+                            kami. dan jelajahi
+                            tentang kami dengan kunjungi situs di bawah ini :</p>
+                        <div class="col-lg-12 px-1 py-0 lh-1 text-start">
+                            <div class="d-flex col-lg-8 px-1 justify-content-start">
+                                <div class="col-lg-2 mx-2">
+                                    <a href=""
+                                        class="text-blue feature-icon-medium d-inline-flex align-items-center justify-content-center text-bg-light rounded-5 text-decoration-none text-default">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 mx-2">
+                                    <a href=""
+                                        class="text-danger fw-bold feature-icon-medium d-inline-flex align-items-center justify-content-center text-bg-light rounded-5 text-decoration-none text-default">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 mx-2">
+                                    <a href=""
+                                        class="text-success fw-bold feature-icon-medium d-inline-flex align-items-center justify-content-center text-bg-light rounded-5 text-decoration-none text-default">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 mx-2">
+                                    <a href=""
+                                        class="text-danger fw-bold feature-icon-medium d-inline-flex align-items-center justify-content-center text-bg-light rounded-5 text-decoration-none text-default">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 py-4">
+                                <div id="map-container-google-1 shadows" class="z-depth-1-half map-container"
+                                    >
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.1333089379778!2d112.9103057!3d-7.6688536!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675248626701!5m2!1sen!2sid"
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contact mx-auto col-lg-8 py-5 px-4 aos-animate" data-aos="zoom-in" data-aos-duration="500">
+                    <form class="row g-4 needs-validation py-5 p-md-3 blur rounded-3 bg-white"
+                        novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Nama anda</label>
+                            <input type="text" class="form-control rounded-0 border-2" placeholder="Masukkan nama anda"
+                                id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                                Silahkan untuk mengisi nama anda dengan benar.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email anda</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text rounded-0" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control rounded-0 border-2"
+                                    id="validationCustomUsername" placeholder="Masukkan email"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Silahkan untuk mengisi alamat email anda dengan benar.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom06" class="form-label">Perusahaan (Opsional)</label>
+                            <input type="text" class="form-control rounded-0 border-2" placeholder="Masukkan Perusahaan"
+                                id="validationCustom06" value="" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom06" class="form-label">Subjek</label>
+                            <input type="text" class="form-control rounded-0 border-2" placeholder="Masukkan subjek"
+                                id="validationCustom07" value="" required>
+                            <div class="invalid-feedback">
+                                Silahkan untuk mengisi subjek anda.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationTextarea" class="form-label">Komentar</label>
+                            <textarea class="form-control rounded-0 border-2" id="validationTextarea" rows="5"
+                                placeholder="Masukkan komentar" required></textarea>
+                            <div class="invalid-feedback">
+                                Silahkan untuk mengisi komentar anda
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="invalidCheck"
+                                    required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Persetujuan syarat dan ketentuan
+                                </label>
+                                <div class="invalid-feedback">
+                                    Kamu harus menyetujui sebelum kirim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 justify-content-end">
+                            <button class="btn btn-light-gradient color-1 text-white p-3 w-100 rounded-2"
+                                type="submit"><i class="fa-regular fa-paper-plane fw-medium fs-6"></i> Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footers">
+        <div class="container">
+            <div class="row px-1">
+                <!-- <div class="col-md-4 py-4 py-md-5 d-flex align-items-center">
+                    <div class="w-100">
+                        <span class="subheading ">berlangganan</span>
+                        <h3 class="heading-section">buletin</h3>
+                    </div>
+                </div>
+                <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5">
+                    <form action="#" class="subscribe-form w-100 rounded-1">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control rounded-left rounded-5 border-0"
+                                placeholder="Masukkan alamat email">
+                            <button type="submit" class="form-control submit">
+                                <span><i class="fa-regular fa-paper-plane fw-bold fs-5"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="row ">
+                    <div class="col-md-3 col-lg-6 order-md-last">
+                        <div class="row justify-content-end">
+                            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                                <h2 class="footer-heading">
+                                    <a href="" class="logo text-decoration-none"><img
+                                            src="assets/img/logo_famies_white.svg" width="200" alt=""></a>
+                                </h2>
+                                <p class="copyright">
+                                    Copyright &copy; <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Template ini telah dibuat <i class="ion-ios-heart" aria-hidden="true"></i>
+                                    oleh <a class="text-decoration-none blue" href="https://colorlib.com"
+                                        target="_blank">famiesdeveloper.com</a> | Versi 2.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Layanan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-web.html">Web aplikasi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-desain-grafis.html">Desain grafis</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-skripsi.html">Skripsi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-undangan-digital.html">Undangan digital</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-hosting.html">Hosting Unlimited</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Bantuan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Telusuri</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="checkout.html">Tentang kami</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Tim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 pb-4">
+                    <div class="line"></div>
+                </div>
+                <div class="col-md-6 text-md-left">
+                    <ul class="list-unstyled link-menu nav-left">
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Kebijakan
+                                pribadi</a></li>
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Syarat &amp;
+                                Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <ul class="list-unstyled social nav-right">
+                        <li><span class="icon-bca mx-2"><img src="assets/img/bank/bca_w.svg" width="50" height="50"
+                                    alt="BANK BCA"></span></li>
+                        <li><span class="icon-mandiri mx-2"><img src="assets/img/bank/mandiri_w.svg" width="50"
+                                    height="50" alt="BANK MANDIRI"></span>
+                        </li>
+                        <li><span class="icon-dana mx-2"><img src="assets/img/bank/dana_w.svg" width="50" height="50"
+                                    alt="DANA"></span>
+                        </li>
+                        <li><span class="icon-ovo mx-2"><img src="assets/img/bank/ovo_w.svg" width="50" height="50"
+                                    alt="OVO"></span>
+                        </li>
+                        <li><span class="icon-gopay mx-2"><img src="assets/img/bank/gopay_w.svg" width="50" height="50"
+                                    alt="GOPAY"></span>
+                        </li>
+                        <li><span class="icon-paypal mx-2"><i class="fab fa-paypal text-white fs-5"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="scroll-to-top" href="#page-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <a class="scroll-to-top1 bounce"
+        href="https://api.whatsapp.com/send?phone=6281321860243&text=Halo%20Famiesdeveloper,%20Saya%20mau%20jasa%20artikel%20bisa?">
+        <i class="fab fa-whatsapp fs-2 p-2"></i>
+    </a>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar_top'
+        })
+    </script>
+    <script>
+        new Swiper('.slides-3', {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+    <script>
+        /**
+         * Validation form bootstrap 5.3
+         */
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        /**
+         * AOS System animation
+         */
+        AOS.init({
+            duration: 1200,
+        })
+
+        /**
+         * Pure Counter
+         */
+        new PureCounter();
+    </script>
+
+    
+</body>
+
+</html>

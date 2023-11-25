@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/brand/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/brand//logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/brand//logo/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icon/brand//logo/site.webmanifest">
+
+    <title>famies developer</title>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#navbar_top">
+    <!--Navbar menu-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top bg-only front ">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <a class="navbar-brand col-lg-3 me-0" href="index.html"><img src="assets/img/logo_famies_white.svg"
+                    width="160" alt=""></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <i class="fa-solid fa-stream text-white"></i>
+            </button>
+            <div class="offcanvas offcanvas-end bg-blue-secondary" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close btn-close-white text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item py-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown custom-dropdown py-2">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="icon-file-text-o mr-2"></span>Layanan
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="layanan-web.html" class="dropdown-item"><i
+                                        class="bi bi-window font-blue fw-semibold"></i><span class="mx-2"></span>Web
+                                    Aplikasi<span class="mx-5"></span></a>
+                                <a href="layanan-desain-grafis.html" class="dropdown-item"><i
+                                        class="bi bi-easel2 font-blue fw-semibold"></i><span class="mx-2"></span>Desain
+                                    Grafis<span class="mx-5"></span></a>
+                                <a href="layanan-skripsi.html" class="dropdown-item"><i
+                                        class="bi bi-book font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Skripsi<span class="mx-5"></span></a>
+                                <a href="layanan-undangan-digital.html" class="dropdown-item"><i
+                                        class="bi bi-envelope-paper-heart font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Undangan Digital<span class="mx-5"></span></a>
+                                <a href="layanan-hosting.html" class="dropdown-item"><i
+                                        class="bi bi-hdd-network font-blue fw-semibold"></i><span
+                                        class="mx-2"></span>Hosting Tanpa Batas<span class="mx-5"></span></a>
+                            </ul>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link" href="portfolio.html">Portofolio</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link" href="contact.html">Tentang kami</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a href="login.html"
+                                class="btn btn-light-gradient color-1 rounded-3 text-white login mx-2">Masuk</a>
+                        </li>
+                        <div class="copy text-center">
+                            <p class="color-blue">Desain dibuat oleh famies developer &trade;</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="breadcrump" class="bg-only py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 gy-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-center ">
+                        <li class="breadcrumb-item text-white">
+                            <h5 class="text-up-down fw-semibold fs-1 align-items-center font-family">Hosting Tanpa Batas
+                            </h5>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-12" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-decoration-none justify-content-center fs-6 fw-medium font-family">
+                        <li class="breadcrumb-item"><a class="text-decoration-none text-white "
+                                href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Layanan</li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Hosting Tanpa Batas</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features py-3">
+        <div class="container-content">
+            <div class="tab-pane mt-5" id="tab-5">
+                <div class="row">
+                    <div class="col-lg-7 px-4 py-2" data-aos="fade-left" data-aos-duration="500">
+                        <h5 class="fw-light fs-5 letter_spacing1 font-blue font-family">DESKRIPSI LAYANAN KAMI</h5>
+                        <h3 class="fw-medium text-black fs-25 font-family">Tentang<b class="fw-bold font-blue"> Hosting
+                                Tanpa Batas</b></h3>
+                        <p class="mt-4">
+                            <i>Hosting</i> adalah layanan untuk menyimpan data <i>website</i> agar bisa diakses
+                            <i>online</i>. Simak selengkapnya di sini! <i>E-book</i> Lengkap Gratis. Tinggal Unduh
+                            Gratis. Mulai Belajar Sekarang! Siap di Praktikkan. Layanan: <i>Web Hosting, Cloud
+                                Hosting, VPS, Domain.</i>
+                        </p>
+                        <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-duration="500">
+                            <h5 class="font-blue">Kode referensi promo</h5>
+                            <div class="col-md-12">
+                                <div class="subscribe-form w-100 rounded-5">
+                                    <div class="form-group d-flex">
+                                        <input type="text" value="aff-FAMIES22" readonly
+                                            class="form-control rounded-left rounded-5 border-0"
+                                            placeholder="Masukkan Pencarian" id="myInput">
+                                        <button class="form-control submit bg-transparent rounded-5"
+                                            onclick="jscopy1()">
+                                            <span><i class="bi bi-files fs-5"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="text-center"></p>
+                                <div class="text-center" id="PesanCopy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 px-4 py-2 text-center" data-aos="fade-right" data-aos-duration="500">
+                        <img src="assets/img/hosting.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                        <center>
+                            <div class="row justify-content-center">
+                                <div class="justify-content-start">
+                                    <a href="#hosting" class="btn btn-white mb-4 rounded-5 font-blue fs-4 aos-animate"
+                                        data-aos="zoom-in" data-aos-duration="1500"><i
+                                            class="fa-solid fa-angles-down fa-bounce"></i></a>
+                                </div>
+                            </div>
+                        </center>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 bg-prefer-1" id="hosting">
+        <div class="container-fluid" data-aos="fade-up" data-aos-duration="500">
+            <div class="row">
+                <div class="mt-5 py-3">
+                    <div class="container-fluid" id="icon-grid">
+                        <div class="row justify-content-center">
+                            <div class="rule-text1" data-aos="fade-down" data-aos-duration="500">
+                                <h5 class="fw-light fs-6 text-white letter_spacing1 font-family">LAYANAN</h5>
+                                <h2 class="fs-1 fw-medium text-white font-family">Layanan
+                                    hosting tanpa batas</b> yang
+                                    tersedia
+                                </h2>
+                            </div>
+                            <center>
+                                <p class="fs-6 col-lg-9 text-white text-center py-3" data-aos="fade-down"
+                                    data-aos-duration="500">
+                                    Kami
+                                    memiliki beberapa layanan <i>hosting</i> tanpa batas yang dibutuhkan oleh anda
+                                    untuk
+                                    kepentingan
+                                    personal. </p>
+                            </center>
+                        </div>
+                        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500">
+                            <div class="col-xl col-md-4 py-5 ">
+                                <div class="card rounded-1 border border-none shadow">
+                                    <div class="card-header">
+                                        <h5 class="fw-normal text-center">Paket Charming </h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <del class="small fs-6">Rp. 38.000,-</del>
+                                        <span class="badge bg-primary fs-6">72%</span>
+                                        <h2 class="card-title pricing-card-title fw-bold font-family text-muted mt-2">
+                                            Rp. 10.000,- <small class="text-muted fw-light">/bln</small></h2>
+                                        <p class="fw-semibold text-muted fs-4 mt-2">
+                                            Harga Termurah</p>
+                                        <ul class="list-unstyled card-text mt-4 mb-1">
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSD
+                                                Space 400 MB</li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Bandwidth/bulan
+                                                Unmetered</li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Panel
+                                                cPanel</li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Gratis 1
+                                                Domain </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Gratis 1
+                                                Domain Tambahan</li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i> 1
+                                                Website</li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Subdomain Unlimited</li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Email Unlimited
+                                            </li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Database Unlimited
+                                            </li>
+                                            <li class="text"><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSL Gratis
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Migrasi Gratis
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Auto Weekly Backup
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Instant Backup
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Cloudflare.cdn
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Google Index
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Template WooCommerce
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Website Penjualan Gratis
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Desk.id
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Chatonomy
+                                            </li>
+                                            <li class="text"><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                SEO Site Audit Gratis
+                                            </li>
+                                        </ul>
+                                        <a
+                                            class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                            <i></i></a>
+                                        <a class="btn btn-light-gradient color-1 rounded-1 w-100 py-3 w-50 text-white px-1"
+                                            href="https://idwebhost.com/beli-hosting-sekarang/117">Pesan
+                                            Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl col-md-4 py-5">
+                                <div class="card rounded-1 border-none border shadow">
+                                    <div class="card-header">
+                                        <h5 class="fw-normal text-center">Paket Cute</h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <del class="small fs-6">Rp. 43.900,-</del>
+                                        <span class="badge bg-primary fs-6">55%</span>
+                                        <h2 class="card-title pricing-card-title fw-bold font-family text-muted mt-2">
+                                            Rp. 19.900,- <small class="text-muted fw-light">/bln</small></h2>
+                                        <p class="fw-semibold text-muted fs-4 mt-2">
+                                            Gratis Domain</p>
+                                        <ul class="list-unstyled mt-4 mb-1">
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSD Space 2 GB</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Bandwidth/bulan Unmetered</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Panel
+                                                cPanel</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                Domain Baru 1 tahun</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Gratis 1
+                                                Domain Tambahan</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> 1
+                                                Website</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Subdomain Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Email
+                                                Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Database Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SSL
+                                                Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Migrasi Gratis</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Auto Weekly
+                                                Backup</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Instant Backup
+                                            </li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i>
+                                                Cloudflare.cdn</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Google
+                                                Index</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Template
+                                                WooCommerce</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Website
+                                                Penjualan Gratis</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Desk.id
+                                            </li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Chatonomy
+                                            </li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> SEO Site
+                                                Audit GRATIS</li>
+
+                                        </ul>
+                                        <a
+                                            class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                            <i></i></a>
+                                        <a class="btn btn-light-gradient color-1 rounded-1 w-100 py-3 w-50 text-white px-1"
+                                            href="https://idwebhost.com/beli-hosting-sekarang/96">Pesan
+                                            Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl col-md-4 py-5">
+                                <div class="card rounded-1 border-primary border-0 shadow">
+                                    <div class="card-header text-bg-primary border-primary">
+                                        <p class="small text-center"><i class="bi bi-star-fill text-warning"></i>
+                                            Most Popular <i class="bi bi-star-fill text-warning"></i></p>
+                                        <hr>
+                                        <h5 class="fw-normal text-center">Paket Awesome</h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <del class="small fs-6">Rp. 83.900,-</del>
+                                        <span class="badge bg-primary fs-6">68%</span>
+                                        <h2 class="card-title pricing-card-title fw-bold font-family text-primary mt-2">
+                                            Rp. 26.900,- <small class="text-primary fw-light">/bln</small></h2>
+                                        <p class="fw-semibold text-primary fs-4 mt-2">
+                                            Free 2 Domain</p>
+                                        <ul class="list-unstyled mt-4 mb-1">
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSD Space 5 GB</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Bandwidth/bulan Unmetered</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Panel
+                                                cPanel</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1 Domain</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1
+                                                Domain Tambahan</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> 11
+                                                Website</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Subdomain Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Email
+                                                Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Database Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SSL
+                                                Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Migrasi Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Auto
+                                                Weekly
+                                                Backup</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Instant Backup
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Cloudflare.cdn</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Google
+                                                Index</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Template
+                                                WooCommerce</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Website
+                                                Penjualan Gratis</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Desk.id
+                                            </li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Chatonomy
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SEO
+                                                Site
+                                                Audit GRATIS</li>
+                                        </ul>
+                                        <a
+                                            class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                            <i></i></a>
+                                        <a class="btn btn-light-gradient color-1 rounded-1 w-100 py-3 w-50 text-white px-1"
+                                            href="https://idwebhost.com/beli-hosting-sekarang/97">Pesan
+                                            Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl col-md-4 py-5">
+                                <div class="card rounded-1 norder-none border shadow">
+                                    <div class="card-header">
+                                        <h5 class="fw-normal text-center">Paket Fantastic</h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <del class="small fs-6">Rp. 126.900,-</del>
+                                        <span class="badge bg-primary fs-6">32%</span>
+                                        <h2 class="card-title pricing-card-title fw-bold font-family text-muted mt-2">
+                                            Rp. 86.900,- <small class="text-muted fw-light">/bln</small></h2>
+                                        <p class="fw-semibold text-muted fs-4 mt-2">
+                                            Free 2 Domain</p>
+                                        <ul class="list-unstyled mt-4 mb-1">
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSD Space 8 GB</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Bandwidth/bulan Unmetered</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Panel
+                                                cPanel</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1 Domain</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1
+                                                Domain Tambahan</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> 21
+                                                Website</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Subdomain Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Email
+                                                Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Database Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SSL
+                                                Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Migrasi Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Auto
+                                                Weekly
+                                                Backup</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Instant Backup
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Cloudflare.cdn</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Google
+                                                Index</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Template
+                                                WooCommerce</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Website
+                                                Penjualan Gratis</li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Desk.id
+                                            </li>
+                                            <li><i class="bi bi-x-circle-fill fs-5 text-danger"></i> Chatonomy
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SEO
+                                                Site
+                                                Audit GRATIS</li>
+                                        </ul>
+                                        <a
+                                            class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                            <i></i></a>
+                                        <a class="btn btn-light-gradient color-1 rounded-1 w-100 py-3 w-50 text-white px-1"
+                                            href="https://idwebhost.com/beli-hosting-sekarang/98">Pesan
+                                            Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl col-md-4 py-5">
+                                <div class="card rounded-1 border border-none shadow">
+                                    <div class="card-header">
+                                        <h5 class="fw-normal text-center">Paket Corporate</h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <del class="small fs-6">Rp. 503.900,-</del>
+                                        <span class="badge bg-primary fs-6">40%</span>
+                                        <h2 class="card-title pricing-card-title fw-bold font-family text-muted mt-2">
+                                            Rp. 300.900,- <small class="text-muted fw-light">/bln</small></h2>
+                                        <p class="fw-semibold text-muted fs-4 mt-2">
+                                            Free 2 Domain</p>
+                                        <ul class="list-unstyled mt-4 mb-1">
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                SSD Space 15 GB</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Bandwidth/bulan Unmetered</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Panel
+                                                cPanel</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1 Domain</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Gratis
+                                                1
+                                                Domain Tambahan</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> 51
+                                                Website</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Subdomain Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Email
+                                                Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Database Unlimited</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SSL
+                                                Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Migrasi Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Auto
+                                                Weekly
+                                                Backup</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Instant Backup
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Cloudflare.cdn</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> Google
+                                                Index</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Template
+                                                WooCommerce</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Website
+                                                Penjualan Gratis</li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Desk.id
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                                Chatonomy
+                                            </li>
+                                            <li><i class="bi bi-check-circle-fill fs-5 text-success"></i> SEO
+                                                Site
+                                                Audit GRATIS</li>
+                                        </ul>
+                                        <a
+                                            class="btn btn-white w-100 text-decoration-none text-center tombol border-0 py-3">selengkapnya
+                                            <i></i></a>
+                                        <a class="btn btn-light-gradient color-1 rounded-1 w-100 py-3 w-50 text-white px-1"
+                                            href="https://idwebhost.com/beli-hosting-sekarang/99">Pesan
+                                            Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-ide">
+        <div class="container-content">
+            <div class="row">
+                <div class="mt-5 mb-5 mb-md-5">
+                    <div class="container-fluid" id="icon-grid">
+                        <div class="row justify-content-center">
+                            <div class="rule-text1" data-aos="fade-down" data-aos-duration="500">
+                                <h5 class="fw-light fs-6 font-blue letter_spacing1 font-family">SPESIFIKASI</h5>
+                                <h2 class="fs-2 fw-medium font-family">Perbandingan spesifikasi <b
+                                        class="font-blue">layanan hosting tanpa batas</b> yang tersedia
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="table-responsive mt-5 px-1" data-aos="fade-down" data-aos-duration="500">
+                            <table class="table text-center border-none">
+                                <thead>
+                                    <tr class="bg-only">
+                                        <th style="width: 34%; border-bottom-color:white" scope="row"></th>
+                                        <th class="text-white" scope="row">Paket Charming</th>
+                                        <th class="text-white" scope="row">Paket Cute</th>
+                                        <th class="text-white" scope="row">Paket Awesome</th>
+                                        <th class="text-white" scope="row">Paket Fantastic</th>
+                                        <th class="text-white" scope="row">Paket Corporate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">SSD Space</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Bandwidth/bulan
+                                            Unmetered</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Panel cPanel</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Gratis 1 Domain</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Gratis 1
+                                            Domain Tambahan</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Website</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Subdomain Unlimited
+                                        </th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Email
+                                            Unlimited</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Database Unlimited</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">SSL
+                                            Gratis</th>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Migrasi Gratis</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Auto Weekly
+                                            Backup</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Instant Backup</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Cloudflare.cdn</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Google Index</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Template
+                                            WooCommerce</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Website
+                                            Penjualan Gratis</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">Desk.id</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start font-blue">Chatonomy</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                    <tr class="bg-blue">
+                                        <th scope="row" class="text-start font-blue">SEO Site
+                                            Audit GRATIS</th>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-x-circle-fill fs-4 text-danger"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                        <td><i class="bi bi-check-circle-fill fs-4 text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Tab Content 5 -->
+        </div>
+    </section><!-- End Features Section -->
+
+    <section class="idea mt-3 mb-5" id="idea">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 aos-init mt-5 line-height aos-animate px-5" data-aos="fade-left"
+                            data-aos-duration="500">
+                            <h5 class="fw-light fs-6 letter_spacing1 font-blue font-family">KEUNTUNGAN</h5>
+                            <h1 class="fw-medium line-height fs-1 letter_spacing1">
+                                Keuntungan yang didapat pada <b class="fw-bold font-family font-blue">Hosting Tanpa
+                                    Batas</b>
+                            </h1>
+                            <div class="display-benefit mt-4">
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Akses yang jauh
+                                    lebih mudah.</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Fleksibilitas yang
+                                    dapat diandalkan.</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Dapat
+                                    memperkenalkan produk
+                                    secara
+                                    luas.</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Menghemat biaya
+                                    dan waktu
+                                    anda.</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Harga yang
+                                    terjangkau.</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Stabilitas lebih
+                                    tinggi dibanding <i class="text-black fs-6">shared hosting.</i></p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Data bisa diakses
+                                    kapan saja dan dijamin
+                                    aman</p>
+                                <p class="fs-6 fw-light"><i
+                                        class="bi bi-check fw-bold fs-4 text-success"></i>&nbsp;&nbsp;Manajemen <i
+                                        class="text-black fs-6">server</i>
+                                    yang lebih mudah</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 aos-init aos-animate mt-5 px-5" data-aos="fade-right" data-aos-duration="500">
+                            <img src="assets/img/benefit-1.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-ide timeline-section section-padding" id="section_3">
+        <div class="section-overlay"></div>
+        <div class="container-content">
+            <div class="row justify-content-center mt-5 mb-3">
+                <div class="col-lg-7 col-md-6 mt-2 py-2" data-aos="fade-left" data-aos-duration="500">
+                    <div class="container px-5">
+                        <h5 class="fw-light fs-6 font-blue letter_spacing1 font-family">ALUR PELAYANAN</h5>
+                        <h2 class="fw-medium fs-20 font-family"><b class="font-blue fw-bold">Bagaimana cara
+                                melakukan
+                                pemesanan </b>
+                            di situs kami?</h2>
+                        <div class="row mt-5">
+                            <div class="col-lg-12 col-12 mx-auto">
+                                <div class="timeline-container">
+                                    <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                        <div class="list-progress">
+                                            <div class="inner"></div>
+                                        </div>
+
+                                        <li>
+                                            <h4 class="font-blue mb-3">Melihat reverensi portfolio</h4>
+
+                                            <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-heading-1">
+                                                        <button class="accordion-button collapsed " type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-1"
+                                                            aria-expanded="false" aria-controls="flush-collapse-1">
+                                                            Menentukan terlebih dahulu ide bisnismu
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapse-1" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading-1"
+                                                        data-bs-parent="#accordionFlushExample1">
+                                                        <div class="accordion-body">
+                                                            <p class="text-start">Beberapa catatan yang harus
+                                                                diperhatikan
+                                                                dalam
+                                                                memulai
+                                                                pemesanan. Usahakan anda untuk melakukan analisa atau
+                                                                riset
+                                                                ide
+                                                                bisnis anda
+                                                                dengan mengunjungi situs kami atau mengunjungi
+                                                                situs-situs
+                                                                reverensi relevan
+                                                                lainnya.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-search text-white"></i>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <h4 class="font-blue mb-3">Kirim pesan order</h4>
+
+                                            <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-heading-2">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-2"
+                                                            aria-expanded="false" aria-controls="flush-collapse-2">
+                                                            Kirim pesan order ide bisnismu.
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapse-2" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading-2"
+                                                        data-bs-parent="#accordionFlushExample2">
+                                                        <div class="accordion-body">
+                                                            <p class="text-start">Kirim order ide bisnismu dengan
+                                                                melalui
+                                                                form
+                                                                input yang
+                                                                tersedia pada tombol <strong><a
+                                                                        class="text-blue text-decoration-none"
+                                                                        href="">gabung</a></strong>. pengiriman pesan
+                                                                melalui
+                                                                form input
+                                                                tersebut untuk pendataan pesanan order yang terdaftar
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-envelope-paper text-white"></i>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <h4 class="font-blue mb-3">Pengiriman pesan Umpan balik</h4>
+
+                                            <div class="accordion accordion-flush" id="accordionFlushExample3">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-heading-3">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-3"
+                                                            aria-expanded="false" aria-controls="flush-collapse-3">
+                                                            Pengiriman pesan umpan balik kepada anda
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapse-3" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading-3"
+                                                        data-bs-parent="#accordionFlushExample3">
+                                                        <div class="accordion-body">
+                                                            <p class="text-start">Kami akan mengirimkan pesan feedback
+                                                                kepada
+                                                                anda secara
+                                                                cepat.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-send text-white"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="font-blue mb-3">Transaksi pesanan</h4>
+
+                                            <div class="accordion accordion-flush" id="accordionFlushExample4">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-heading-4">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-4"
+                                                            aria-expanded="false" aria-controls="flush-collapse-4">
+                                                            Lakukan transaksi DP ataupun lunas.
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapse-4" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading-4"
+                                                        data-bs-parent="#accordionFlushExample4">
+                                                        <div class="accordion-body">
+                                                            <p class="text-start">Anda disuruh melakukan transaksi DP
+                                                                ataupun
+                                                                lunas. </p>
+                                                            <p class="fw-bold text-start">Dengan ketentuan</p>
+                                                            <p class="text-success text-start"><i
+                                                                    class="fa-solid fa-circle-check text-success"></i>
+                                                                Anda
+                                                                harus melakukan
+                                                                pembayaran DP harus minimal 30% dari total harga jasa
+                                                                yang
+                                                                di
+                                                                pilih, lakukan
+                                                                pembayaran minimal 1x24 jam saat anda melakukan
+                                                                pemesanan
+                                                                jasa
+                                                                kami.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-cash-stack text-white"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="font-blue mb-3">Pembuatan proyek</h4>
+
+                                            <div class="accordion accordion-flush" id="accordionFlushExample5">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-heading-5">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse-5"
+                                                            aria-expanded="false" aria-controls="flush-collapse-5">
+                                                            Melakukan proses pembuatan proyek anda.
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapse-5" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading-5"
+                                                        data-bs-parent="#accordionFlushExample5">
+                                                        <div class="accordion-body">
+                                                            <p class="text-start">Kami akan langsung membuat proyek
+                                                                pesanan
+                                                                anda. dengan
+                                                                beberapa ketentuaan waktu yang telah ditentukan.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-tools text-white"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="font-blue mb-3">Selesai</h4>
+
+                                            <p class="">Pengerjaan selesai</p>
+
+                                            <div class="icon-holder">
+                                                <i class="bi-flag text-white"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mt-5 py-4 fixed-element" data-aos="fade-right" data-aos-duration="500">
+                    <div class="container px-3">
+                        <div class="row">
+                            <div class="rounded-4 bg-step shadow">
+                                <div class="py-4">
+                                    <h2 class="fs-4 fw-bold font-family text-white py-3 px-4">Peraturan Pemesanan</h2>
+                                    <p class="text-white px-4 text-justify">
+                                        Alur pelayanan yang anda gunakan pada berikut ini. hanya bisa dilakukan untuk
+                                        melakukan pemesanan untuk beberapa jasa diantaranya (website, desain grafis, dan
+                                        skripsi) namun jika anda ingin pemesanan jasa undangan digital atau hosting
+                                        tanpa batas. Anda hanya melakukan pemesanan dengan pemesanan secara biasa.
+                                        dengan klik <b class="fw-bold font-family color-blue">Pesan sekarang</b>. dan
+                                        setelah itu anda bisa melakukan permintaan untuk desain undangan digital. namun
+                                        jika ingin memesan hosting tanpa batas. Anda perlu salin kode promo untuk
+                                        melakukan pembelian hosting tersebut. agar mendapatkan potongan harga sekitar
+                                        30% setiap pembelian.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-ide" id="section-software">
+        <div class="container py-3 mt-5">
+            <div class="row justify-content-center">
+                <div class="rule-text1" data-aos="zoom-in" data-aos-duration="500">
+                    <h2 class="fw-medium fs-1 font-family"><b class="font-blue fw-bold">Pelanggan</b>
+                        yang pernah <b class="font-blue fw-bold">bergabung.</b></h2>
+                </div>
+                <center>
+                    <p class="text-lead mt-3 fs-6" data-aos="zoom-in" data-aos-duration="500">Lebih dari <b
+                            class="font-blue fw-bold">10+</b> pelanggan yang telah menggunakan jasa kami. untuk kegiatan
+                        bisnisnya.</p>
+                </center>
+            </div>
+        </div>
+        <div class="container-fluid aos-animate mb-5" data-aos="zoom-in" data-aos-duration="500">
+            <div class="row no-padding">
+                <div id="mySwiper" class="d-lg-flex justify-content-center owl-carousel active-gallery">
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/makaring.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/idpediatech.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/bkd-indramayu.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/lp3i.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footers">
+        <div class="container">
+            <div class="row px-1">
+                <div class="row ">
+                    <div class="col-md-3 col-lg-6 order-md-last">
+                        <div class="row justify-content-end">
+                            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                                <h2 class="footer-heading">
+                                    <a href="" class="logo text-decoration-none"><img
+                                            src="assets/img/logo_famies_white.svg" width="200" alt=""></a>
+                                </h2>
+                                <p class="copyright">
+                                    Copyright &copy; <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Template ini telah dibuat <i class="ion-ios-heart" aria-hidden="true"></i>
+                                    oleh <a class="text-decoration-none blue" href="https://colorlib.com"
+                                        target="_blank">famiesdeveloper.com</a> | Versi 2.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Layanan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-web.html">Web aplikasi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-desain-grafis.html">Desain grafis</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-skripsi.html">Skripsi</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-undangan-digital.html">Undangan digital</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="layanan-hosting.html">Hosting Unlimited</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Bantuan</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-md-0 mb-4">
+                                <h3>Telusuri</h3>
+                                <ul class="list-unstyled links">
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="contact.html">Tentang kami</a></li>
+                                    <li class="sensors-item"><a class="lines list-color text-decoration-none"
+                                            href="#">Tim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 pb-4">
+                    <div class="line"></div>
+                </div>
+                <div class="col-md-6 text-md-left">
+                    <ul class="list-unstyled link-menu nav-left">
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Kebijakan
+                                pribadi</a></li>
+                        <li class="sensors-item"><a class="lines list-color text-decoration-none" href="#">Syarat &amp;
+                                Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <ul class="list-unstyled social nav-right">
+                        <li><span class="icon-bca mx-2"><img src="assets/img/bank/bca_w.svg" width="50" height="50" alt="BANK BCA"></span></li>
+                        <li><span class="icon-mandiri mx-2"><img src="assets/img/bank/mandiri_w.svg" width="50" height="50" alt="BANK MANDIRI"></span>
+                        </li>
+                        <li><span class="icon-dana mx-2"><img src="assets/img/bank/dana_w.svg" width="50" height="50" alt="DANA"></span>
+                        </li>
+                        <li><span class="icon-ovo mx-2"><img src="assets/img/bank/ovo_w.svg" width="50" height="50" alt="OVO"></span>
+                        </li>
+                        <li><span class="icon-gopay mx-2"><img src="assets/img/bank/gopay_w.svg" width="50" height="50" alt="GOPAY"></span>
+                        </li>
+                        <li><span class="icon-paypal mx-2"><i class="fab fa-paypal text-white fs-5"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="scroll-to-top" href="#page-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <a class="scroll-to-top1 bounce"
+        href="https://api.whatsapp.com/send?phone=6281321860243&text=Halo%20Famiesdeveloper,%20Saya%20mau%20jasa%20artikel%20bisa?">
+        <i class="fab fa-whatsapp fs-2 p-2"></i>
+    </a>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+    <script>
+        function jscopy1() {
+            var jsCopy = document.getElementById("myInput");
+            var msg = "<p> Berhasil di salin";
+            jsCopy.select();
+            jsCopy.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            document.getElementById("PesanCopy").innerHTML = jsCopy.value + msg + '</p>';
+        }
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("showValue");
+
+            var replaceText = $(this).parent().hasClass("showValue") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        $(".btn").on('click', function () {
+            $(this).parent().toggleClass("show");
+
+            var replaceText = $(this).parent().hasClass("show") ? "Kembali" : "Kembali";
+            $(this).text();
+        });
+    </script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar_top'
+        })
+    </script>
+    <script>
+        /**
+         * Validation form bootstrap 5.3
+         */
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        /**
+         * AOS System animation
+         */
+        AOS.init({
+            duration: 1200,
+        })
+
+        /**
+         * Pure Counter
+         */
+        new PureCounter();
+    </script>
+
+</body>
+
+</html>
