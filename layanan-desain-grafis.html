@@ -647,39 +647,54 @@
                 </center>
             </div>
         </div>
-        <div class="container-fluid aos-animate mb-5" data-aos="zoom-in" data-aos-duration="500">
-            <div class="row no-padding">
-                <div id="mySwiper" class="d-lg-flex justify-content-center owl-carousel active-gallery">
+       <center>
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-duration="500">
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <!-- Slide content goes here -->
                         <div class="items-img">
-                            <img src="assets/img/client/makaring.png" alt="">
+                            <img src="assets/img/client/makaring.png" width="250" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <!-- Slide content goes here -->
                         <div class="items-img">
-                            <img src="assets/img/client/idpediatech.png" alt="">
-                        </div>
-                    </div>
-                    <!-- Add more slides as needed -->
-                    <div class="swiper-slide">
-                        <!-- Slide content goes here -->
-                        <div class="items-img">
-                            <img src="assets/img/client/bkd-indramayu.png" alt="">
+                            <img src="assets/img/client/idpediatech.png" width="250" alt="">
                         </div>
                     </div>
                     <!-- Add more slides as needed -->
                     <div class="swiper-slide">
                         <!-- Slide content goes here -->
                         <div class="items-img">
-                            <img src="assets/img/client/lp3i.svg" alt="">
+                            <img src="assets/img/client/bkd-indramayu.png" width="250" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/lp3i.svg" width="250" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/stikom.png" width="250" alt="">
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <!-- Slide content goes here -->
+                        <div class="items-img">
+                            <img src="assets/img/client/umc.png" width="250" alt="">
                         </div>
                     </div>
                     <!-- Add more slides as needed -->
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
+        </center>
     </section>
 
     <footer class="footers">
@@ -795,6 +810,7 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon='{"rayId":"79f82355dc3c4ca1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
         crossorigin="anonymous"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script>
         function jscopy1() {
             var jsCopy = document.getElementById("myInput");
@@ -825,6 +841,36 @@
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#navbar_top'
         })
+    </script>
+    <script>
+        new Swiper('.slides-3', {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                }
+            }
+        });
     </script>
     <script>
         /**
